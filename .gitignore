@@ -1,0 +1,103 @@
+# ============================
+# OS-specific
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# Build output
+# ============================
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Bb]uild/
+artifacts/
+TestResults/
+
+# VS/VS Code
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+# Keep workspace settings if intentionally committed; otherwise uncomment next line
+# .vscode/
+
+# JetBrains Rider / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Coverage / test outputs
+coverage/
+*.coverage
+*.coveragexml
+*.opencover.xml
+*.trx
+
+# Logs and diagnostics
+*.log
+*.svclog
+*.etl
+
+# ASP.NET Core
+wwwroot/lib/
+# Publish profiles (usually environment-specific)
+**/Properties/PublishProfiles/*.pubxml
+**/Properties/PublishProfiles/*.publisheddialogsettings
+
+# Azure artifacts
+*.publishsettings
+*.azurePubxml
+
+# Local secrets and environment files
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+.env
+.env.*
+
+# Databases
+*.mdf
+*.ldf
+*.ndf
+# SQLite and app data (do not ignore EF Migrations)
+src/Web/App_Data/*.db
+*.sqlite
+*.sqlite3
+
+# Node (if present for frontend assets)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.dist/
+dist/
+build/
+
+# Others
+$tf/
+*.tmp
+*.swp
+*.bak
+
+# Notes:
+# - EF Core Migrations should be committed and are intentionally not ignored.
+# - If you want to track VS Code settings, remove the comment from the .vscode/ rule above.
